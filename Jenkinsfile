@@ -14,5 +14,21 @@ pipeline {
                 echo 'welcome to master branch'
             }
         }
+        stage('Example deploy to development branch') {
+            when {
+                branch 'development'
+            }
+            steps {
+                echo 'welcome to develpoment branch'
+            }
+        }
+        stage('Example deploy to stagging branch') {
+            when {
+                branch 'stagging'
+            }
+            steps {
+                echo 'welcome to stagging branch'
+            }
+        }
     }
 }
