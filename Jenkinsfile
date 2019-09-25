@@ -6,12 +6,13 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Example deploy to master branch') {
+        stage('Example deploy to feature branch') {
             when {
-                branch 'master'
+                branch 'feature'
             }
             steps {
-                echo 'welcome to master branch.'
+
+                echo 'welcome to feature branch'
             }
         }
     }
