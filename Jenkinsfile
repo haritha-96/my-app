@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example deploy to master branch') {
             when {
-                branch 'feature'
+                branch 'master'
             }
             steps {
                 echo 'welcome to master branch.'
