@@ -6,12 +6,12 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Example deploy to development branch') {
+        stage('Example deploy to stagging branch') {
             when {
-                branch 'development'
+                branch 'stagging'
             }
             steps {
-                echo 'welcome to develpoment branch'
+                echo 'welcome to stagging branch'
             }
         }
     }
