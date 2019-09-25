@@ -27,7 +27,7 @@ pipeline {
                 branch 'stagging'
             }
             steps {
-                echo 'welcome to stagging branch'
+                echo 'welcome to stagging branch.'
             }
         }
     }
