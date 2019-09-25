@@ -11,7 +11,9 @@ pipeline {
                 branch 'master'
             }
             steps {
+
                 echo 'welcome to master branch'
+
             }
         }
     }
